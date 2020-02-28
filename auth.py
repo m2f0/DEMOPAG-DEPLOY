@@ -22,9 +22,9 @@ client.init_with_user_credentials(username, password)
 #for app in client.v2.apps:
 #    print(app.summary())
 operation.push (space_id='4ba624a8-7ab3-4ddb-b55b-7ac19a57a9b1', manifest_path='manifest.yml', restart=True) #operation.push(client.v2.spaces.get_first(name='demopag-dev')['metadata']['guid'], path)
-print('cf_api_url= ' + cf_api_url)
-print('username= ' + username)
-print('password= ' + password)
+#print('cf_api_url= ' + cf_api_url)
+#print('username= ' + username)
+#print('password= ' + password)
 
 
 
