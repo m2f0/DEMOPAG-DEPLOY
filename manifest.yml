@@ -1,0 +1,16 @@
+---
+applications:
+- name: demopag-dev
+  host: demopag-dev
+  random-route: false
+  memory: 512M
+  domain: apps.na.vwapps.io
+  env:
+    HTTPS_PROXY: "http://ueeCbyVGQXKdUC4Z%4065cd8227-b5db-4c85-8281-796f775c822d:2euUlQIzJwE263tXJcRS7D-7@proxy.private.na.vwapps.io:8080"
+    NO_PROXY: "apps.internal,sys.na.vwapps.io,apps.na.vwapps.io,internal.na.vwapps.io,dynamodb.us-east-1.amazonaws.com,s3.amazonaws.com,s3-amazonaws.com,*.s3-amazonaws.com,ssm.us-east-1.amazonaws.com,sns.us-east-1.amazonaws.com,logs.us-east-1.amazonaws.com,kms.us-east-1.amazonaws.com,kinesis.us-east-1.amazonaws.com,secretsmanager.us-east-1.amazonaws.com,monitoring.us-east-1.amazonaws.com,sqs.us-east-1.amazonaws.com"
+    ASPNETCORE_ENVIRONMENT: Development
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+ 
+services:
+    - demopag-dev-proxy
